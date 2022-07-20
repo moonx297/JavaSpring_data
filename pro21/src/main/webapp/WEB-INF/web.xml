@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+	<servlet>
+		<servlet-name>action</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<!-- servlet이름은 action이고 DispatcherServlet으로 들어오고 1순위로 잡아라. 
+	servlet mapping할건데 앞에 글자는 상관없다. 들어갈때 확장자 명만 do로 해라. -->
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>	<!-- action-servlet이니 action 이라고 이름 맞춰야함 -->
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+</web-app>
