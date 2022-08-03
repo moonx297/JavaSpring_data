@@ -7,7 +7,7 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<!-- <param-value>/WEB-INF/spring/root-context.xml</param-value> -->
-		<param-value>/WEB-INF/spring/action-mybatis.xml</param-value> // db 연결
+		<param-value>/WEB-INF/spring/action-mybatis.xml</param-value>	<!-- request (url 검색) 하면 action-mybatis를 연결시켜준다.-->
 	</context-param>
 	
 	<!-- Creates the Spring Container shared by all Servlets and Filters -->
@@ -21,7 +21,7 @@
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>	//mapper 역할
+			<param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>	<!-- request (url 검색) 하면 servlet-context.xml 연결시켜준다.-->
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>

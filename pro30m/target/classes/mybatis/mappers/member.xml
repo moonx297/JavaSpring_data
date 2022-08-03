@@ -3,7 +3,8 @@
       PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="mapper.member">
+<mapper namespace="mapper.member">		
+<!-- 쿼리 모음집. 쿼리는 기존의 하나를 잘 만들어 놓고 테이블 이름과 조건들만 조금씩 변경해서 사용해라 -->
 	<resultMap id="memResult" type="memberVO">
 		<result property="id" column="id" />
         <result property="pwd" column="pwd" />

@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.myspring</groupId>
-	<artifactId>pro30m</artifactId>
-	<name>pro30m</name>
+	<artifactId>pro30</artifactId>
+	<name>pro30</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
@@ -117,6 +117,7 @@
 			<scope>test</scope>
 		</dependency>        
 		
+		<!-- 마이바티스 -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
@@ -156,6 +157,19 @@
 			<artifactId>tiles-servlet</artifactId>
 			<version>3.0.8</version>
 			</dependency>
+		<!-- 파일 업로드 from pro28 -->
+			<dependency>
+		   <groupId>commons-fileupload</groupId>
+		   <artifactId>commons-fileupload</artifactId>
+		   <version>1.2.1</version>
+	 	</dependency>
+	
+		<dependency>
+		   <groupId>commons-io</groupId>
+		   <artifactId>commons-io</artifactId>
+		   <version>1.4</version>
+		</dependency>  
+		
 	</dependencies>
     <build>
         <plugins>

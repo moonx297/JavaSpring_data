@@ -4,6 +4,8 @@
 
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.myspring.pro30m.member.vo.MemberVO"  alias="memberVO" />
+		<typeAlias type="com.myspring.pro30.member.vo.MemberVO"  alias="memberVO" />
+		<typeAlias type="com.myspring.pro30.board.vo.ArticleVO"  alias="articleVO" />
+		<!-- vo 선언 -->
 	</typeAliases>
 </configuration>
